@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 i = 97
-while i <= 122 and i != 101 and i != 113:
-    print("{}".format(chr(i)), end="")
+output = ""
+while i <= 122:
+    if i != 101 and i != 113:
+        output += chr(i)
     i += 1
+
+print(output)
